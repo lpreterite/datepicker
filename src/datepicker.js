@@ -993,6 +993,18 @@
 
         // No default
       }
+
+      console.log(233);
+      this.$element.trigger('rendered', {
+        options: options,
+        view: {
+          type: view,
+          day: viewDay,
+          month: viewMonth,
+          year: viewYear,
+          date: viewDate
+        }
+      });
     },
 
     clickDoc: function (e) {

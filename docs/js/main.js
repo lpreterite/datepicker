@@ -96,5 +96,9 @@ $(function () {
   });
 
   $('[data-toggle="datepicker"]').datepicker();
+  $date.on('rendered', function(e, opts){
+    var datepicker = $(this).data('datepicker');
+    console.log(opts, datepicker.$days.find(':not(.muted)'));
+  });
 
 });
