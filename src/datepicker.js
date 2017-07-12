@@ -846,8 +846,8 @@
         datepicker: this,
         view: {
           day: viewDate.getDate(),
-          month: viewDate.getFullYear(),
-          year: viewDate.getMonth(),
+          month: viewDate.getMonth(),
+          year: viewDate.getFullYear(),
           date: viewDate
         }
       });

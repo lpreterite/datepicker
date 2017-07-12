@@ -5,7 +5,7 @@
  * Copyright (c) 2014-2017 Fengyuan Chen
  * Released under the MIT license
  *
- * Date: 2017-07-12T08:00:34.809Z
+ * Date: 2017-07-12T09:17:11.246Z
  */
 
 (function (factory) {
@@ -846,8 +846,8 @@
         datepicker: this,
         view: {
           day: viewDate.getDate(),
-          month: viewDate.getFullYear(),
-          year: viewDate.getMonth(),
+          month: viewDate.getMonth(),
+          year: viewDate.getFullYear(),
           date: viewDate
         }
       });
