@@ -362,11 +362,13 @@
       var $monthsPicker = this.$monthsPicker;
       var $daysPicker = this.$daysPicker;
       var format = this.format;
-
-      if(Number(view) > this.options.maxView || Number(view) < this.options.minView) return;
+      view = Number(view);
+      if(view > this.options.maxView || view < this.options.minView){
+        view = 0;
+      }
 
       if (format.hasYear || format.hasMonth || format.hasDay) {
-        switch (Number(view)) {
+        switch (view) {
           case VIEWS.YEARS:
           case 'years':
             $monthsPicker.addClass(CLASS_HIDE);

@@ -52,10 +52,10 @@ dist/
 
 Three quick start options are available:
 
-- [Download the latest release](https://github.com/fengyuanchen/datepicker/archive/master.zip).
-- Clone the repository: `git clone https://github.com/fengyuanchen/datepicker.git`.
-- Install with [NPM](http://npmjs.org): `npm install fengyuanchen/datepicker`.
-- Install with [Bower](http://bower.io): `bower install fengyuanchen/datepicker`.
+- [Download the latest release](https://github.com/lpreterite/datepicker/archive/master.zip).
+- Clone the repository: `git clone https://github.com/lpreterite/datepicker.git`.
+- Install with [NPM](http://npmjs.org): `npm install lpreterite/datepicker`.
+- Install with [Bower](http://bower.io): `bower install lpreterite/datepicker`.
 
 
 ### Installation
@@ -219,6 +219,29 @@ The end view date. All the dates after this date will be disabled.
   - `2`: years
 
 The start view when initialized.
+
+
+### maxView
+
+- Type: `Number`
+- Default: `0`
+- Options:
+  - `0`: days
+  - `1`: months
+  - `2`: years
+
+The max view.
+
+### minView
+
+- Type: `Number`
+- Default: `0`
+- Options:
+  - `0`: days
+  - `1`: months
+  - `2`: years
+
+The min view.
 
 
 ### weekStart
