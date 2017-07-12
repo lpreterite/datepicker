@@ -129,18 +129,18 @@ $brand-color: #39f;
 // -----------------------------------------------------------------------------
 
 .datepicker-panel {
-  > ul:before,
-  > ul:after {
+  ul:before,
+  ul:after {
     display: table;
 
     content: ' ';
   }
 
-  > ul:after {
+  ul:after {
     clear: both;
   }
 
-  > ul {
+  ul {
     width: 102%;
     margin: 0;
     padding: 0;

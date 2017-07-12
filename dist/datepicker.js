@@ -1,11 +1,11 @@
 /*!
- * Datepicker v@VERSION
+ * Datepicker v0.5.4
  * https://github.com/fengyuanchen/datepicker
  *
- * Copyright (c) 2014-@YEAR Fengyuan Chen
+ * Copyright (c) 2014-2017 Fengyuan Chen
  * Released under the MIT license
  *
- * Date: @DATE
+ * Date: 2017-07-12T08:00:34.809Z
  */
 
 (function (factory) {
@@ -354,7 +354,7 @@
         } else {
           $this.off(EVENT_CLICK, this.show);
         }
-      } 
+      }
     },
 
     showView: function (view) {
@@ -363,7 +363,7 @@
       var $daysPicker = this.$daysPicker;
       var format = this.format;
       view = Number(view);
-      if(view > this.options.maxView || view < this.options.minView){
+      if (view > this.options.maxView || view < this.options.minView){
         view = 0;
       }
 
@@ -504,8 +504,9 @@
       return (
         '<' + itemTag + ' class="' + classes.join(' ') + '"' +
         (defaults.view ? ' data-view="' + defaults.view + '"' : '') +
-        '>' +
+        '>' + '<span' + (defaults.view ? ' data-view="' + defaults.view + '"' : '') + '>' +
         defaults.text +
+        '</span>' +
         '</' + itemTag + '>'
       );
     },

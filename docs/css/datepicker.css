@@ -1,11 +1,11 @@
 /*!
- * Datepicker v0.5.3
+ * Datepicker v0.5.4
  * https://github.com/fengyuanchen/datepicker
  *
  * Copyright (c) 2014-2017 Fengyuan Chen
  * Released under the MIT license
  *
- * Date: 2017-06-15T11:00:53.699Z
+ * Date: 2017-07-12T08:00:35.446Z
  */
 .datepicker-container {
   font-size: 12px;
@@ -125,24 +125,24 @@
   left: auto;
 }
 
-.datepicker-panel > ul:before,
-.datepicker-panel > ul:after {
+.datepicker-panel ul:before,
+.datepicker-panel ul:after {
   display: table;
 
   content: ' ';
 }
 
-.datepicker-panel > ul:after {
+.datepicker-panel ul:after {
   clear: both;
 }
 
-.datepicker-panel > ul {
+.datepicker-panel ul {
   width: 102%;
   margin: 0;
   padding: 0;
 }
 
-.datepicker-panel > ul > li {
+.datepicker-panel ul > li {
   float: left;
 
   width: 30px;
@@ -158,67 +158,67 @@
   background-color: #fff;
 }
 
-.datepicker-panel > ul > li:hover {
+.datepicker-panel ul > li:hover {
   background-color: #e6f2ff;
 }
 
-.datepicker-panel > ul > li.muted,
-.datepicker-panel > ul > li.muted:hover {
+.datepicker-panel ul > li.muted,
+.datepicker-panel ul > li.muted:hover {
   color: #999;
 }
 
-.datepicker-panel > ul > li.highlighted {
+.datepicker-panel ul > li.highlighted {
   background-color: #e6f2ff;
 }
 
-.datepicker-panel > ul > li.highlighted:hover {
+.datepicker-panel ul > li.highlighted:hover {
   background-color: #cce6ff;
 }
 
-.datepicker-panel > ul > li.picked,
-.datepicker-panel > ul > li.picked:hover {
+.datepicker-panel ul > li.picked,
+.datepicker-panel ul > li.picked:hover {
   color: #39f;
 }
 
-.datepicker-panel > ul > li.disabled,
-.datepicker-panel > ul > li.disabled:hover {
+.datepicker-panel ul > li.disabled,
+.datepicker-panel ul > li.disabled:hover {
   cursor: default;
 
   color: #ccc;
   background-color: #fff;
 }
 
-.datepicker-panel > ul > li.disabled.highlighted,
-.datepicker-panel > ul > li.disabled:hover.highlighted {
+.datepicker-panel ul > li.disabled.highlighted,
+.datepicker-panel ul > li.disabled:hover.highlighted {
   background-color: #e6f2ff;
 }
 
-.datepicker-panel > ul > li[data-view='years prev'],
-.datepicker-panel > ul > li[data-view='year prev'],
-.datepicker-panel > ul > li[data-view='month prev'],
-.datepicker-panel > ul > li[data-view='years next'],
-.datepicker-panel > ul > li[data-view='year next'],
-.datepicker-panel > ul > li[data-view='month next'],
-.datepicker-panel > ul > li[data-view='next'] {
+.datepicker-panel ul > li[data-view='years prev'],
+.datepicker-panel ul > li[data-view='year prev'],
+.datepicker-panel ul > li[data-view='month prev'],
+.datepicker-panel ul > li[data-view='years next'],
+.datepicker-panel ul > li[data-view='year next'],
+.datepicker-panel ul > li[data-view='month next'],
+.datepicker-panel ul > li[data-view='next'] {
   font-size: 18px;
 }
 
-.datepicker-panel > ul > li[data-view='years current'],
-.datepicker-panel > ul > li[data-view='year current'],
-.datepicker-panel > ul > li[data-view='month current'] {
+.datepicker-panel ul > li[data-view='years current'],
+.datepicker-panel ul > li[data-view='year current'],
+.datepicker-panel ul > li[data-view='month current'] {
   width: 150px;
 }
 
-.datepicker-panel > ul[data-view='years'] > li,
-.datepicker-panel > ul[data-view='months'] > li {
+.datepicker-panel ul[data-view='years'] > li,
+.datepicker-panel ul[data-view='months'] > li {
   line-height: 52.5px;
 
   width: 52.5px;
   height: 52.5px;
 }
 
-.datepicker-panel > ul[data-view='week'] > li,
-.datepicker-panel > ul[data-view='week'] > li:hover {
+.datepicker-panel ul[data-view='week'] > li,
+.datepicker-panel ul[data-view='week'] > li:hover {
   cursor: default;
 
   background-color: #fff;

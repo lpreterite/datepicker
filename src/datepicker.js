@@ -354,7 +354,7 @@
         } else {
           $this.off(EVENT_CLICK, this.show);
         }
-      } 
+      }
     },
 
     showView: function (view) {
@@ -363,7 +363,7 @@
       var $daysPicker = this.$daysPicker;
       var format = this.format;
       view = Number(view);
-      if(view > this.options.maxView || view < this.options.minView){
+      if (view > this.options.maxView || view < this.options.minView){
         view = 0;
       }
 
@@ -504,8 +504,9 @@
       return (
         '<' + itemTag + ' class="' + classes.join(' ') + '"' +
         (defaults.view ? ' data-view="' + defaults.view + '"' : '') +
-        '>' +
+        '>' + '<span' + (defaults.view ? ' data-view="' + defaults.view + '"' : '') + '>' +
         defaults.text +
+        '</span>' +
         '</' + itemTag + '>'
       );
     },
