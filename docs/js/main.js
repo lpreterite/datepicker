@@ -96,8 +96,8 @@ $(function () {
   });
 
   $('[data-toggle="datepicker"]').datepicker();
-  $date.on('rendered', function(e, opts){
-    var datepicker = $(this).data('datepicker');
+  $date.on('renderDays', function(e, opts){
+    var datepicker = opts.datepicker;
     console.log(opts, datepicker.$days.find(':not(.muted)'));
   });
 

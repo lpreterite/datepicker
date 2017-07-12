@@ -363,6 +363,8 @@
       var $daysPicker = this.$daysPicker;
       var format = this.format;
 
+      if(Number(view) > this.options.maxView || Number(view) < this.options.minView) return;
+
       if (format.hasYear || format.hasMonth || format.hasDay) {
         switch (Number(view)) {
           case VIEWS.YEARS:
@@ -835,6 +837,17 @@
           months[viewMonth] + ' ' + viewYear + suffix
         );
       this.$days.html(prevItems.join('') + items.join(' ') + nextItems.join(''));
+
+      this.$element.trigger('renderDays', {
+        options: options,
+        datepicker: this,
+        view: {
+          day: viewDate.getDate(),
+          month: viewDate.getFullYear(),
+          year: viewDate.getMonth(),
+          date: viewDate
+        }
+      });
     },
 
     click: function (e) {
@@ -993,18 +1006,6 @@
 
         // No default
       }
-
-      console.log(233);
-      this.$element.trigger('rendered', {
-        options: options,
-        view: {
-          type: view,
-          day: viewDay,
-          month: viewMonth,
-          year: viewYear,
-          date: viewDate
-        }
-      });
     },
 
     clickDoc: function (e) {
@@ -1441,6 +1442,12 @@
 
     // The start view when initialized
     startView: 0, // 0 for days, 1 for months, 2 for years
+
+    // The max view
+    maxView: 2,
+
+    // The min view
+    minView: 0,
 
     // The start day of the week
     weekStart: 0, // 0 for Sunday, 1 for Monday, 2 for Tuesday, 3 for Wednesday, 4 for Thursday, 5 for Friday, 6 for Saturday
