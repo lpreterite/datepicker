@@ -1,11 +1,11 @@
 {
-  "name": "@fengyuanchen/datepicker",
+  "name": "@lpreterite/datepicker",
   "description": "A simple jQuery datepicker plugin.",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "main": "dist/datepicker.js",
   "license": "MIT",
-  "repository": "fengyuanchen/datepicker",
-  "homepage": "https://github.com/fengyuanchen/datepicker",
+  "repository": "lpreterite/datepicker",
+  "homepage": "https://github.com/lpreterite/datepicker",
   "author": {
     "name": "Fengyuan Chen",
     "url": "http://chenfengyuan.com"

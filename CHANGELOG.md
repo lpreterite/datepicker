@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.4 (Jul 12, 2017)
+
+- Add renderDays event.
+- Add maxView and minView control startView mode.
+
 
 ## 0.5.3 (May 30, 2017)
 

@@ -354,7 +354,7 @@
         } else {
           $this.off(EVENT_CLICK, this.show);
         }
-      }
+      } 
     },
 
     showView: function (view) {
